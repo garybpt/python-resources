@@ -103,9 +103,9 @@ elif age == 18:
 else:
     print("You are an adult.")
 
-if: Checks a condition and executes the code block if the condition is True.
-elif (short for "else if"): Allows you to check additional conditions if the first one is False.
-else: Provides a default action if none of the previous conditions are True.
+- if: Checks a condition and executes the code block if the condition is True.
+- elif (short for "else if"): Allows you to check additional conditions if the first one is False.
+- else: Provides a default action if none of the previous conditions are True.
 
 * 2. Loops (for and while):
 
@@ -391,3 +391,114 @@ When you run this code, it will print a multiplication table for the specified r
 
 ##########
 
+I'll provide more thorough explanations in future lessons to ensure you have a better understanding of the concepts before moving on to practice sections. Let's proceed with the next lesson.
+
+** Lesson 7: Python Control Flow
+
+In this lesson, we'll dive deeper into control flow in Python. Control flow is how you manage the execution of your program based on conditions, loops, and more.
+
+* 1. Conditional Statements (if, elif, else):
+
+Conditional statements allow you to make decisions in your code.
+
+age = 20
+
+if age < 18:
+    print("You are a minor.")
+elif age == 18:
+    print("You just turned 18.")
+else:
+    print("You are an adult.")
+
+- if: Checks a condition and executes a code block if the condition is true.
+- elif (short for "else if"): Allows you to check additional conditions if the first one is false.
+- else: Provides a default action if none of the previous conditions are true.
+
+* 2. Loops (for, while):
+
+Loops allow you to repeat code.
+
+- 'for' Loop:
+
+fruits = ["apple", "banana", "cherry"]
+
+for fruit in fruits:
+    print(fruit)
+
+- 'while' Loop:
+
+count = 0
+
+while count < 5:
+    print(count)
+    count += 1
+
+* 3. List Comprehensions:
+
+List comprehensions provide a concise way to create lists.
+
+squares = [x**2 for x in range(1, 6)]
+
+* 4. Error Handling (try, except, finally):
+
+Error handling helps you manage exceptions in your code.
+
+try:
+    result = 10 / 0  # This will raise a ZeroDivisionError
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+finally:
+    print("This runs no matter what.")
+
+* 5. More on Functions:
+
+Functions allow you to encapsulate code into reusable blocks.
+
+- Default parameters: You can specify default values for function parameters.
+- Keyword arguments: You can use keyword arguments when calling functions.
+
+* 6. More on Dictionaries:
+
+Dictionaries store key-value pairs.
+
+- Access values by keys.
+- Modify values.
+- Add new key-value pairs.
+
+* 7. More on Lists:
+
+Lists are versatile data structures.
+
+- List methods (e.g., append(), remove()).
+- Slicing lists.
+- Iterating through lists with 'for' loops.
+
+* 8. Control Flow Practice:
+
+We'll practice concepts like conditional statements, loops, and error handling to solidify your understanding.
+
+Let's focus on each of these concepts one by one, starting with conditional statements.
+
+** Concept 1: Conditional Statements (if, elif, else)
+
+Conditional statements in Python allow you to make decisions in your code based on conditions. They are a fundamental part of programming. Let's dive deeper into conditional statements.
+
+Conditional Statements:
+
+Conditional statements are used to execute different code blocks based on whether a condition is true or false.
+
+In Python, the most common conditional statements are:
+
+- if: Executes a block of code if a condition is true.
+- elif (short for "else if"): Allows you to check additional conditions if the previous ones are false.
+- else: Provides a default action if none of the previous conditions are true.
+
+* Practice Exercise:
+
+Let's practice by writing code that categorizes a given temperature into different levels: "cold," "moderate," or "hot," based on the following rules:
+
+- If the temperature is below 0 degrees Celsius, it's "cold."
+- If the temperature is between 0 and 25 degrees Celsius (inclusive), it's "moderate."
+- If the temperature is above 25 degrees Celsius, it's "hot."
+
+Write Python code that takes a temperature as input and prints the corresponding category.

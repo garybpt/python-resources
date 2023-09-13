@@ -16,7 +16,7 @@ echo "# Your-Repository-Name" >> README.md
 git add README.md
 git commit -m "Initial commit"
 
-* - Create a New Repository on GitHub:
+* Create a New Repository on GitHub:
 
 - Go to GitHub in your web browser.
 - Log in to your GitHub account or sign up if you don't have one.
@@ -26,7 +26,7 @@ git commit -m "Initial commit"
 
 * 3. Link Your Local Repository to GitHub:
 
-T- o link your local repository to the newly created GitHub repository, use the following command:
+- To link your local repository to the newly created GitHub repository, use the following command:
 
 git remote add origin <repository_url>
 Replace <repository_url> with the URL of your GitHub repository.

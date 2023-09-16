@@ -11,6 +11,11 @@ Beautiful Soup is a Python library for pulling data out of HTML and XML files.
 discord.py is a modern, easy to use, feature-rich, and async ready API wrapper for Discord.
     Documentation - https://discordpy.readthedocs.io/en/stable/
 
+**JSON**
+
+JSON has quickly become the de facto standard for information exchange.
+    Documentation - https://realpython.com/python-json/
+
 **Math**
 
 This module provides access to the mathematical functions defined by the C standard.

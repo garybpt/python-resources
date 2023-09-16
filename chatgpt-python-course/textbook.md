@@ -719,9 +719,108 @@ Seek Guidance: If you're unsure which function to use, don't hesitate to seek gu
 
 In summary, the process of choosing the right function involves understanding your task, reading documentation, considering function names and parameters, and sometimes experimenting. Over time, as you gain experience with Python and its libraries, you'll become more proficient at selecting the most appropriate functions for your programming needs.
 
-**Practice Exercise:**
+**Practice Exercise A:**
 
 Let's practice using a Python module and an external library:
 
 1. Import the random module and use it to generate a random number between 1 and 10.
 2. Install the external library called requests (if not already installed) using pip. Then, import the requests library and make a simple HTTP GET request to a website of your choice.
+
+**Practice Exercise B: Using the BeautifulSoup Library**
+
+In this exercise, we'll use the BeautifulSoup library to parse and extract information from an HTML web page. BeautifulSoup is a popular library for web scraping and parsing HTML or XML documents.
+
+Install the BeautifulSoup library (if not already installed) using pip. You can install it by running:
+
+pip install beautifulsoup4
+
+Create a Python script that does the following:
+1. Import the necessary modules (requests and bs4).
+2. Make an HTTP GET request to a website of your choice that contains HTML content.
+3. Use BeautifulSoup to parse the HTML content of the web page.
+4. Extract specific information from the web page (e.g., titles, links, or other data).
+5. Print the extracted information.
+
+You can choose any website you like for this exercise. Some websites may have more complex HTML structures, so start with a simple one if you're new to web scraping.
+
+Here's a basic outline of the steps:
+
+import requests
+from bs4 import BeautifulSoup
+
+* Make an HTTP GET request to a website
+response = requests.get("https://www.example.com")
+
+* Parse the HTML content using BeautifulSoup
+soup = BeautifulSoup(response.text, "html.parser")
+
+* Extract and print specific information from the web page
+* For example, you can extract and print titles, links, or other data.
+
+Remember to replace "https://www.example.com" with the URL of the website you choose for this exercise. You can explore the website's HTML structure to determine what information you want to extract.
+
+
+
+# Concept 7: More on Dictionaries
+
+Dictionaries are versatile data structures that store key-value pairs. You can access values by their keys, modify values, and add new key-value pairs. Let's dive into these aspects of dictionaries.
+
+We'll start with the basics of dictionaries and then move on to more advanced operations.
+
+**Dictionaries Basics:**
+
+In Python, dictionaries are defined using curly braces {}. Each key-value pair is separated by a colon :. Here's a simple example:
+
+* Creating a dictionary
+student = {
+    "name": "John",
+    "age": 20,
+    "major": "Computer Science"
+}
+
+You can access values in a dictionary using their keys:
+
+* Accessing values
+print("Name:", student["name"])
+print("Age:", student["age"])
+print("Major:", student["major"])
+You can modify values by assigning a new value to a specific key:
+
+* Modifying values
+student["age"] = 21
+print("Updated Age:", student["age"])
+To add a new key-value pair, simply assign a value to a new key:
+
+* Adding a new key-value pair
+student["grade"] = "A"
+print("Grade:", student["grade"])
+You can also use the get() method to access values by keys, which allows you to provide a default value if the key doesn't exist:
+
+* Using get() with a default value
+grade = student.get("grade", "N/A")
+print("Grade:", grade)
+
+Create a Python program that manages a student database using a dictionary. Each student will have a unique student ID as the key, and the values will include the student's name, age, and major. Follow these steps:
+
+1. Create an empty dictionary to store student records.
+2. Implement a function that allows you to add a new student to the database. This function should take the student's name, age, and major as input and assign a unique student ID to the student.
+3.Implement a function that allows you to search for a student by their student ID and print their information (name, age, major).
+4. Implement a function that lists all students in the database along with their student IDs.
+5. Implement a function that allows you to update a student's information (name, age, or major) based on their student ID.
+6. Implement a function that allows you to delete a student from the database based on their student ID.
+7. Create a simple menu system that allows the user to interact with the student database. The menu should include options to add, search, list, update, and delete student records, as well as an option to exit the program.
+
+Here's a simplified example of what the menu system might look like:
+
+Welcome to the Student Database!
+
+1. Add Student
+2. Search Student
+3. List Students
+4. Update Student
+5. Delete Student
+6. Exit
+
+Please select an option: 
+
+Feel free to customize the exercise and add any additional features or error handling that you think would be helpful. This exercise will help you practice working with dictionaries and user interaction in Python.

@@ -21,7 +21,7 @@ Documentation - https://realpython.com/python-json/
 This module provides access to the mathematical functions defined by the C standard.
 Documentation - https://docs.python.org/3/library/math.html
 
-**Open AI**
+**OpenAI**
 The OpenAI API can be applied to virtually any task that requires understanding or generating natural language and code.
 Documentation - https://platform.openai.com/docs/introduction/overview
 
@@ -29,3 +29,8 @@ Documentation - https://platform.openai.com/docs/introduction/overview
 
 Python has a built-in module that you can use to make random numbers.
 Documentation - https://www.w3schools.com/python/module_random.asp 
+
+**Requests**
+
+Requests is an elegant and simple HTTP library for Python, built for human beings.
+Documentation - https://requests.readthedocs.io/en/latest/

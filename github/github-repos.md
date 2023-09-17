@@ -1,6 +1,6 @@
 # Create a New GitHub Repository:
 
-## 1. Initialize a New Repository:**
+## 1. Initialize a New Repository:
 
 - Open your command line terminal.
 - Navigate to the directory where you want to create your new repository or project.
@@ -9,7 +9,7 @@
 git init
 echo "# Your-Repository-Name" >> README.md
 
-## 2. Add and Commit the README:**
+## 2. Add and Commit the README:
 
 - Add the README.md file to the staging area and commit it:
 
@@ -24,7 +24,7 @@ git commit -m "Initial commit"
 - Fill in the repository name, optional description, and other settings.
 - Click the "Create repository" button.
 
-## 3. Link Your Local Repository to GitHub:**
+## 3. Link Your Local Repository to GitHub:
 
 - To link your local repository to the newly created GitHub repository, use the following command:
 

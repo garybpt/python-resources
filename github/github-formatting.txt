@@ -36,12 +36,12 @@ Images:
 Code:
 
 Inline `code` can be added using backticks.
+
 Code Blocks:
 
 ```python
 def example_function():
     print("Hello, World!")
-Copy code
 
 Blockquotes:
 

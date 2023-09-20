@@ -1,0 +1,29 @@
+# Ignore compiled binary files
+*.o
+*.out
+*.exe
+
+# Ignore log files
+*.log
+
+# Ignore Node.js dependencies folder
+node_modules/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore editor and IDE-specific files
+.vscode/
+.idea/
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore build output directories
+build/
+dist/
+
+# Ignore AWS server files
+.pem

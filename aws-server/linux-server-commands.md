@@ -8,7 +8,7 @@ ssh -i "[.pem file name]" [AWS IP address]
 
 **Run a Python script permanently on server**
 
-nohup python script-name.py &
+nohup python3 script-name.py &
 
 **Kill script**
 

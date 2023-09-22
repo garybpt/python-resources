@@ -26,4 +26,4 @@ build/
 dist/
 
 # Ignore AWS server files
-.pem
+*.pem

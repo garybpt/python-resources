@@ -1,17 +1,28 @@
 import json
+import os
+
+# Define a filename for the user student record JSON file
+STUDENT_RECORD = "/Users/garybutterfield/python-tutorial/chatgpt-python-course/practice-sessions/l7-2g-student-dictionary.json"
 
 def save_json():
-    with open("l7-2g-student-dictionary.json", "w") as write_file:
-        json.dump(student_dictionary, write_file)
+    with open(STUDENT_RECORD, "w") as file:
+        json.dump(student_dictionary, file)
 
 def open_json():
-    with open("l7-2g-student-dictionary.json", "r") as read_file:
-        data = json.load(read_file)
+    if os.path.exists(STUDENT_RECORD):
+        with open(STUDENT_RECORD, "r") as file:
+            try:
+                return json.load(file)
+            except json.decoder.JSONDecodeError:
+                # Handle the case where the file is empty or contains invalid JSON
+                return {}
+    else:
+        return {}
 
 open_json() # More needs to this to make it work
 
-# Creating an empty dictionary
-student_dictionary = {}
+# Open dictionary
+student_dictionary = open_json()
 
 # Creating a dictionary for a student register
 student = {
@@ -58,4 +69,4 @@ elif ask == 5:
 else:
     print("You chose to exit")
 
-save_json(student_dictionary, id, name, age, subject) # More needs to this to make it work
+save_json() # More needs to this to make it work

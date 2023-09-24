@@ -2,10 +2,10 @@ import json
 import os
 
 # Define a filename for the user student record JSON file
-STUDENT_RECORD = "/Users/garybutterfield/python-tutorial/chatgpt-python-course/practice-sessions/l7-2g-student-dictionary.json"
+STUDENT_RECORD = "l7-2g-student-dictionary.json"
 
 # Open dictionary
-student_dictionary = {'id': id, 'name': name, 'age': age, 'subject': subject}
+student_dictionary = {}
 
 def save_json(student_dictionary):
     with open(STUDENT_RECORD, "w") as file:
@@ -24,13 +24,13 @@ def open_json():
 
 open_json() # More needs to this to make it work
 
-# Creating a dictionary for a student register
-student = {
-    "id": "",
-    "name": "",
-    "age": "",
-    "subject": ""
-}
+# Creating a dictionary for a student register - not convinced this is needed
+# student = {
+    # "id": "",
+    # "name": "",
+    # "age": "",
+    # "subject": ""
+# }
 
 # I think the user interface could be achieved using an if/elif/else statement
 

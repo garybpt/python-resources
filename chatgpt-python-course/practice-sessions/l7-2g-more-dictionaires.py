@@ -4,7 +4,10 @@ import os
 # Define a filename for the user student record JSON file
 STUDENT_RECORD = "/Users/garybutterfield/python-tutorial/chatgpt-python-course/practice-sessions/l7-2g-student-dictionary.json"
 
-def save_json():
+# Open dictionary
+student_dictionary = {'id': id, 'name': name, 'age': age, 'subject': subject}
+
+def save_json(student_dictionary):
     with open(STUDENT_RECORD, "w") as file:
         json.dump(student_dictionary, file)
 
@@ -21,9 +24,6 @@ def open_json():
 
 open_json() # More needs to this to make it work
 
-# Open dictionary
-student_dictionary = open_json()
-
 # Creating a dictionary for a student register
 student = {
     "id": "",
@@ -35,12 +35,12 @@ student = {
 # I think the user interface could be achieved using an if/elif/else statement
 
 # Ask the user what they would like to do
-ask = input("What would you like to do?/n/n(1) Add a student record/n(2)Seaarch for a student record/n(3)List all records/n(4)Update student record/n(5)Delete student record/n(6)Exit/n/nPlease select and option ")
+ask = input("What would you like to do?\n\n(1) Add a student record\n(2) Search for a student record\n(3) List all records\n(4) Update student record\n(5) Delete student record\n(6) Exit\n\nPlease select an option: ")
 ask = int(ask)  # Convert the input to an integer
 
 if ask == 1:
     print("You picked to add a student record")
-        # Ask the user for their student id
+    # Ask the user for their student id
     id = input("What is your Student ID? ")
     id = int(id)  # Convert the input to an integer
     # Ask the user for their name
@@ -53,7 +53,7 @@ if ask == 1:
     subject = input("What are you studying? ")
     subject = str(subject)  # Convert the input to a string
     print("You have added: ", id, name, age, subject)
-    save_json(student_dictionary, id, name, age, subject) # More needs to this to make it work
+    save_json(student_dictionary) # More needs to this to make it work
 
 elif ask == 2:
     print("You picked to search for a student record")

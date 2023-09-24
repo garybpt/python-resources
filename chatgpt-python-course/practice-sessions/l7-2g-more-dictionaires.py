@@ -53,6 +53,7 @@ if ask == 1:
     subject = input("What are you studying? ")
     subject = str(subject)  # Convert the input to a string
     print("You have added: ", id, name, age, subject)
+    save_json(student_dictionary, id, name, age, subject) # More needs to this to make it work
 
 elif ask == 2:
     print("You picked to search for a student record")
@@ -68,5 +69,3 @@ elif ask == 5:
 
 else:
     print("You chose to exit")
-
-save_json() # More needs to this to make it work

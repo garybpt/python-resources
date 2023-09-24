@@ -25,6 +25,11 @@ Documentation - https://docs.python.org/3/library/math.html
 The OpenAI API can be applied to virtually any task that requires understanding or generating natural language and code.
 Documentation - https://platform.openai.com/docs/introduction/overview
 
+**OS Path**
+
+The os module has many uses. This documentation looks specifically "os.path".
+Documentation - https://python101.pythonlibrary.org/chapter16_os.html
+
 **Random**
 
 Python has a built-in module that you can use to make random numbers.

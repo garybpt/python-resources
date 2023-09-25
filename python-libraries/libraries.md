@@ -28,7 +28,7 @@ Documentation - https://platform.openai.com/docs/introduction/overview
 **OS Path**
 
 The os module has many uses. This documentation looks specifically "os.path".
-Documentation - https://python101.pythonlibrary.org/chapter16_os.html
+Documentation - https://docs.python.org/3/library/os.path.html
 
 **Random**
 

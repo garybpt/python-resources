@@ -2,6 +2,7 @@ import json
 import os
 
 # Define a filename for the user student record JSON file
+# os.path.isfile = 
 STUDENT_RECORD = "l7-2g-student-dictionary.json"
 
 # Open dictionary
@@ -22,7 +23,7 @@ def open_json():
     else:
         return {}
 
-open_json() # More needs to this to make it work
+# open_json() # More needs to this to make it work
 
 # Creating a dictionary for a student register - not convinced this is needed
 # student = {

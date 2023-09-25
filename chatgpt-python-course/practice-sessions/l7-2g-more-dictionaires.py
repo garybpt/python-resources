@@ -71,6 +71,15 @@ if ask == 1: # Add a student record
 elif ask == 2: # Search for a student record
     print("You picked to search for a student record")
 
+    # Ask the user for their student id
+    id = input("What Student ID would you like to search for? ")
+    id = int(id)  # Convert the input to an integer
+
+    if student in student_dictionary
+
+    else:
+        print("No sydent record exists.")
+
 elif ask == 3: # List all records
     print("You picked to list all a student records")
     print(student_dictionary)

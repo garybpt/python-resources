@@ -27,8 +27,6 @@ def open_json():
     else:
         return {}
 
-# open_json() # More needs to this to make it work
-
 # Ask the user what they would like to do
 ask = int(input("What would you like to do?\n\n(1) Add a student record\n(2) Search for a student record\n(3) List all records\n(4) Update student record\n(5) Delete student record\n(6) Exit\n\nPlease select an option: "))
 
@@ -75,10 +73,11 @@ elif ask == 2: # Search for a student record
     id = input("What Student ID would you like to search for? ")
     id = int(id)  # Convert the input to an integer
 
-    if student in student_dictionary
+    if "id" in student_dictionary:
+        print()
 
     else:
-        print("No sydent record exists.")
+        print("No student record exists.")
 
 elif ask == 3: # List all records
     print("You picked to list all a student records")

@@ -1,17 +1,6 @@
 import json
 import os
 
-# Define a filename for the user student record JSON file
-# os.path.isfile = 
-STUDENT_RECORD = "chatgpt-python-course/practice-sessions/l7-2g-student-dictionary.json"
-
-# Check if the JSON file already exists and load its contents
-if os.path.isfile(STUDENT_RECORD):
-    with open(STUDENT_RECORD, "r") as file:
-        student_dictionary = json.load(file)
-else:
-    student_dictionary = {}
-
 def save_json(student_dictionary):
     with open(STUDENT_RECORD, "w") as file:
         json.dump(student_dictionary, file, indent=4) # indent=4 prints entries on new lines in the json file
@@ -27,6 +16,21 @@ def open_json():
     else:
         return {}
 
+# Define a filename for the user student record JSON file
+STUDENT_RECORD = "chatgpt-python-course/practice-sessions/l7-2g-student-dictionary.json"
+
+ID = int()  # Convert the input to an integer
+NAME = str()  # Convert the input to an integer
+AGE = int()  # Convert the input to an integer
+SUBJECT = str()  # Convert the input to an integer
+
+# Check if the JSON file already exists and load its contents
+if os.path.isfile(STUDENT_RECORD):
+    with open(STUDENT_RECORD, "r") as file:
+        student_dictionary = json.load(file)
+else:
+    student_dictionary = {}
+
 # Ask the user what they would like to do
 ask = int(input("What would you like to do?\n\n(1) Add a student record\n(2) Search for a student record\n(3) List all records\n(4) Update student record\n(5) Delete student record\n(6) Exit\n\nPlease select an option: "))
 
@@ -35,26 +39,22 @@ if ask == 1: # Add a student record
 
     # Ask the user for their student id
     id = input("What is your Student ID? ")
-    id = int(id)  # Convert the input to an integer
 
     # Ask the user for their name
     name = input("What is your full name? ")
-    name = str(name)  # Convert the input to an integer
 
     # Ask the user for their age
     age = input("How old are you? ")
-    age = int(age)  # Convert the input to an integer
 
     # Ask the user for their subject
     subject = input("What are you studying? ")
-    subject = str(subject)  # Convert the input to an integer
 
      # Create a dictionary for the new student
     student = {
-        "id": id,
-        "name": name,
-        "age": age,
-        "subject": subject
+        "ID": id,
+        "NAME": name,
+        "AGE": age,
+        "SUBJECT": subject
     }
     
     # Add the new student to the student dictionary
@@ -73,8 +73,10 @@ elif ask == 2: # Search for a student record
     id = input("What Student ID would you like to search for? ")
     id = int(id)  # Convert the input to an integer
 
-    if "id" in student_dictionary:
-        print()
+    student = student_dictionary.get("ID", "NAME", "AGE", "SUBJECT") # THIS IS INCORRECT - Need to pull the relevant info into this call
+    
+    if "ID" "NAME" "AGE" "SUBJECT" in student_dictionary:
+        print(student)
 
     else:
         print("No student record exists.")

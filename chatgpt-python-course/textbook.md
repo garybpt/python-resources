@@ -19,7 +19,7 @@ Python is a high-level, interpreted programming language known for its simplicit
 
 Let's write a simple "Hello, World!" program in Python:
 
-print("Hello, World!")
+```print("Hello, World!")```
 
 **Understanding the Code:**
 
@@ -43,19 +43,19 @@ In Python, variables are used to store data. Data comes in different types, and 
 
 1. Integers (int): Whole numbers without a decimal point.
 
-my_integer = 42
+```my_integer = 42```
 
 2. Floating-Point Numbers (float): Numbers with a decimal point.
 
-my_float = 3.14
+```my_float = 3.14```
 
 3. Strings (str): Textual data enclosed in single or double quotes.
 
-my_string = "Hello, Python!"
+```my_string = "Hello, Python!"```
 
 4. Booleans (bool): Represents either True or False.
 
-my_bool = True
+```my_bool = True```
 
 **Creating Variables:**
 
@@ -63,10 +63,10 @@ You can create variables by assigning values to them using the equal sign (=).
 
 Example:
 
-name = "Alice"
+```name = "Alice"
 age = 30
 height = 5.8
-is_student = True
+is_student = True```
 
 **Printing Variables:**
 

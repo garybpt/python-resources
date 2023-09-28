@@ -14,12 +14,10 @@ nohup python3 script-name.py &
 
 One option - in root directory, run:
 
-'''pkill -9 -f [script-name.py]'''
+pkill -9 -f [script-name.py]
 
 Another option, in root directory, run:
 
-'''
 ps -elf | grep python - This will find the PID number for the script you want to kill. It will be the second number.
 
 kill -9 [PID-number]
-'''

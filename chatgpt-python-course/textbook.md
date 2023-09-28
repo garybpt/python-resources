@@ -794,6 +794,16 @@ To add a new key-value pair, simply assign a value to a new key:
 * Adding a new key-value pair
 student["grade"] = "A"
 print("Grade:", student["grade"])
+
+* Deleting dictionary records
+
+# Ask the user for the Student ID to delete
+student_id_to_delete = input("Enter the Student ID you want to delete: ")
+
+if student_id_to_delete in student_dictionary:
+    # Delete the student record from the dictionary
+    del student_dictionary[student_id_to_delete]
+
 You can also use the get() method to access values by keys, which allows you to provide a default value if the key doesn't exist:
 
 * Using get() with a default value

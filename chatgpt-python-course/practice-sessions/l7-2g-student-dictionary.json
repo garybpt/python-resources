@@ -10,11 +10,5 @@
         "NAME": "Alexandra Byrne",
         "AGE": 29,
         "SUBJECT": "Science"
-    },
-    "45678": {
-        "ID": "45678",
-        "NAME": "Wil Jones",
-        "AGE": "34",
-        "SUBJECT": "Sport"
     }
 }

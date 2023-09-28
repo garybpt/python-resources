@@ -70,13 +70,14 @@ elif ask == 2: # Search for a student record
     print("You picked to search for a student record")
 
     # Ask the user for their student id
-    id = input("What Student ID would you like to search for? ")
-    id = int(id)  # Convert the input to an integer
+    student_id = input("What Student ID would you like to search for? ")
 
-    student = student_dictionary.get("ID", "NAME", "AGE", "SUBJECT") # THIS IS INCORRECT - Need to pull the relevant info into this call
-    
-    if "ID" "NAME" "AGE" "SUBJECT" in student_dictionary:
-        print(student)
+    if student_id in student_dictionary:
+        student = student_dictionary[student_id]
+        print("ID: ", student["ID"])
+        print("Name: ", student["NAME"])
+        print("Age: ", student["AGE"])
+        print("Subject: ", student["SUBJECT"])
 
     else:
         print("No student record exists.")

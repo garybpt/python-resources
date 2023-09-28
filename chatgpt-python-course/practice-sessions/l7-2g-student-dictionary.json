@@ -1,19 +1,20 @@
 {
     "12345": {
-        "id": 12345,
-        "name": "Gary Butterfield",
-        "age": 37,
-        "subject": "HR"
+        "ID": 12345,
+        "NAME": "Gary Butterfield",
+        "AGE": 37,
+        "SUBJECT": "HR"
     },
     "9876": {
-        "id": 98765,
-        "name": "Alexandra Byrne",
-        "age": 29,
-        "subject": "Science"
+        "ID": 98765,
+        "NAME": "Alexandra Byrne",
+        "AGE": 29,
+        "SUBJECT": "Science"
     },
     "45678": {
-        "id": "45678",
-        "name": "Wil Jones",
-        "age": "34",
-        "subject": "Sport"
+        "ID": "45678",
+        "NAME": "Wil Jones",
+        "AGE": "34",
+        "SUBJECT": "Sport"
     }
+}

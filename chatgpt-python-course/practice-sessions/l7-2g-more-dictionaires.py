@@ -18,7 +18,7 @@ def open_json():
         return {}
 
 # Define a filename for the student record JSON file
-STUDENT_RECORD = "student_dictionary.json"
+STUDENT_RECORD = "chatgpt-python-course/practice-sessions/l7-2g-student-dictionary.json"
 
 # Load the existing student dictionary or create an empty one
 student_dictionary = open_json()

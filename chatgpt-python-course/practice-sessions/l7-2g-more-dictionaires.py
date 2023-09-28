@@ -89,6 +89,36 @@ elif ask == 3: # List all records
 elif ask == 4: # Update student record
     print("You picked to update a student record")
 
+    # Ask the user for their student id
+    student_id = input("What is the Student ID of the student you would like to update? ")
+
+    if student_id in student_dictionary: # Checking whether the student ID is in the dictionary and asking what they would like to update
+        student = student_dictionary[student_id]
+
+        choice = int(input("What would you like to update?\n\n(1) Name\n(2) Age\n(3) Subject\n"))
+
+        if choice == 1:
+            new_name = input("Enter the new name: ")
+            student["NAME"] = new_name
+        elif choice == 2:
+            new_age = input("Enter the new age: ")
+            student["AGE"] = new_age
+        elif choice == 3:
+            new_subject = input("Enter the new subject: ")
+            student["SUBJECT"] = new_subject
+        else:
+            print("Invalid")
+
+        # Update the student dictionary with the modified information
+        student_dictionary[student_id] = student
+
+        # Save the updated student dictionary to the JSON file
+        save_json(student_dictionary)
+
+        print("Student record updated successfully.")
+    else:
+        print("Student ID not found. Cannot update the record.")
+
 elif ask == 5: # Delete student record
     print("You picked to delete a student record")
 

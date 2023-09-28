@@ -7,7 +7,7 @@ for number in numbers:
     print(numbers)
 
 # Insert 0 at the beginning of the list
-numbers.insert(0, 0)
+numbers.insert(0, 0) # First 0 is position, second 0 is the number being istered
 for number in numbers:
     print(numbers)
 
@@ -17,7 +17,7 @@ for number in numbers:
     print(numbers)
 
 # Extend the list with 7, 8, and 9
-numbers.extend([7, 8, 9])
+numbers.extend([7, 8, 9]) # Note the brackets because we are adding another list to the end
 for number in numbers:
     print(numbers)
 

@@ -964,31 +964,31 @@ You have a list of names: names = ["Alice", "Bob", "Charlie", "David"]. Use a fo
 
 Write a Python program that does the following:
 
-Asks the user to enter their age.
-Checks if the age is less than 18. If so, print "You are a minor." If not, print "You are an adult."
+- Asks the user to enter their age.
+- Checks if the age is less than 18. If so, print "You are a minor." If not, print "You are an adult."
 
 **Exercise 2: Loops**
 
 Write a Python program that does the following:
 
-Using a while loop, print the numbers from 1 to 10.
-Using a for loop, print the numbers from 1 to 10.
+- Using a while loop, print the numbers from 1 to 10.
+- Using a for loop, print the numbers from 1 to 10.
 
 **Exercise 3: Error Handling**
 
 Write a Python program that does the following:
 
-Asks the user to enter two numbers.
-Tries to divide the first number by the second number.
-If the division is successful, print the result.
-If there's a ZeroDivisionError, print "Cannot divide by zero."
-If there's any other error, print "An error occurred."
+- Asks the user to enter two numbers.
+- Tries to divide the first number by the second number.
+- If the division is successful, print the result.
+- If there's a ZeroDivisionError, print "Cannot divide by zero."
+- If there's any other error, print "An error occurred."
 
 **Exercise 4: Combining Control Flow**
 
 Write a Python program that does the following:
 
-Asks the user to enter a number.
-Checks if the number is even or odd.
-If it's even, print "Even number."
-If it's odd, print "Odd number."
+- Asks the user to enter a number.
+- Checks if the number is even or odd.
+- If it's even, print "Even number."
+- If it's odd, print "Odd number."

@@ -1,3 +1,5 @@
+# Ask the user for their age and provide a response depending on whether they're a minor or not
+
 age = input("How old are you? ")
 age = int(age)
 

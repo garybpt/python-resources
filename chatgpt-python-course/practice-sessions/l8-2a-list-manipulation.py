@@ -7,7 +7,7 @@ for number in numbers:
     print(numbers)
 
 # Insert 0 at the beginning of the list
-numbers.insert(0, 0) # First 0 is position, second 0 is the number being istered
+numbers.insert(0, 0) # First 0 is position, second 0 is the number being listered
 for number in numbers:
     print(numbers)
 

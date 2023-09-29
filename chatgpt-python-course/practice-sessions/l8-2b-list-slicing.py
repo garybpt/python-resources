@@ -12,5 +12,5 @@ print(last_three)
 
 # Create a new list 'even_numbers' containing every second number, starting from the second number in the list
 
-even_numbers = [x for x in numbers if x % 2 == 0]
+even_numbers = numbers[1::2]
 print(even_numbers)

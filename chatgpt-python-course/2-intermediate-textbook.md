@@ -162,11 +162,13 @@ print("Hello, World!")  # This line prints "Hello, World!" to the console.'''
 
 Let's create a simple program together. We'll ask the user for their name and then greet them.
 
-'''# Ask the user for their name
-name = input("What's your name? ")'''
+```# Ask the user for their name
+name = input("What's your name? ")
+```
 
-'''# Greet the user
-print("Hello, " + name + "! Welcome to Python.")'''
+```# Greet the user
+print("Hello, " + name + "! Welcome to Python.")
+``
 
 - Copy and paste the code into a .py file.
 - Run the program.

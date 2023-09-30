@@ -112,3 +112,64 @@ Choose one advanced topic and implement a small project or program that demonstr
 Exercise 10:
 
 Choose a library or framework of interest and follow a basic tutorial or create a simple project using it.
+
+##########
+
+# Lesson 1: Getting Started with Python
+
+Python is a versatile and widely-used programming language known for its readability and simplicity. In this lesson, we'll cover the basics to get you started.
+
+**1.1 Introduction to Python:**
+
+- Python is an interpreted, high-level programming language.
+- It's known for its readability, which makes it an excellent choice for beginners.
+
+**1.2 Setting up the Python Environment:**
+
+There are several ways to run Python code:
+
+- Python Interpreter: You can run Python code interactively in a terminal by typing python or python3 (depending on your installation) and entering Python commands.
+- Integrated Development Environments (IDEs): You can use IDEs like PyCharm, Visual Studio Code, or Jupyter Notebook for a more comprehensive development environment.
+- For beginners, using an IDE is often more comfortable, as it provides code highlighting, debugging tools, and better code organization.
+
+**1.3 Writing Your First Python Program (Hello World):**
+
+Let's start by writing your first Python program, the classic "Hello, World!" program.
+
+'''# This is a Python comment. Comments are ignored by the interpreter.
+print("Hello, World!")  # This line prints "Hello, World!" to the console.'''
+
+- Save the above code in a file with a .py extension (e.g., hello.py).
+- Run it using the Python interpreter or your chosen IDE.
+- You should see "Hello, World!" printed on the screen.
+
+**1.4 Variables and Data Types:**
+
+- In Python, you can store data in variables.
+- Common data types include:
+- Integers (int): Whole numbers like 1, 2, -3, etc.
+- Floats (float): Decimal numbers like 3.14, -0.5, etc.
+- Strings (str): Text enclosed in single (' ') or double (" ") quotes, like "Hello, Python!"
+- Booleans (bool): True or False values.
+
+**1.5 Basic Input and Output:**
+
+- You can interact with users by taking input and displaying output.
+- The input() function reads input from the user.
+- The print() function displays output on the screen.
+
+**Exercise 1:**
+
+Let's create a simple program together. We'll ask the user for their name and then greet them.
+
+'''# Ask the user for their name
+name = input("What's your name? ")'''
+
+'''# Greet the user
+print("Hello, " + name + "! Welcome to Python.")'''
+
+- Copy and paste the code into a .py file.
+- Run the program.
+- Enter your name when prompted.
+
+Congratulations! You've completed Lesson 1 and created your first Python program. You now have a basic understanding of Python syntax, variables, data types, input/output, and running Python code.

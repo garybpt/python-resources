@@ -1,6 +1,7 @@
 Moving on to intermediate Python coding. ChatGPT prompt:
 
-"You are an experienced coding teacher. You will comprehensively and thoroughly teach me Python at an intermediate level, with practice exercise for each lesson. First, I would like you to provide me with a lesson plan that we will follow."
+```"You are an experienced coding teacher. You will comprehensively and thoroughly teach me Python at an intermediate level, with practice exercise for each lesson. First, I would like you to provide me with a lesson plan that we will follow."
+```
 
 # Lesson plan
 
@@ -136,8 +137,9 @@ There are several ways to run Python code:
 
 Let's start by writing your first Python program, the classic "Hello, World!" program.
 
-'''# This is a Python comment. Comments are ignored by the interpreter.
-print("Hello, World!")  # This line prints "Hello, World!" to the console.'''
+```# This is a Python comment. Comments are ignored by the interpreter.
+print("Hello, World!")  # This line prints "Hello, World!" to the console.
+```
 
 - Save the above code in a file with a .py extension (e.g., hello.py).
 - Run it using the Python interpreter or your chosen IDE.
@@ -164,11 +166,10 @@ Let's create a simple program together. We'll ask the user for their name and th
 
 ```# Ask the user for their name
 name = input("What's your name? ")
-```
 
-```# Greet the user
+# Greet the user
 print("Hello, " + name + "! Welcome to Python.")
-``
+```
 
 - Copy and paste the code into a .py file.
 - Run the program.

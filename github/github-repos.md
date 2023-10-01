@@ -6,15 +6,17 @@
 - Navigate to the directory where you want to create your new repository or project.
 - Run the following commands to initialize a new Git repository and create a README file:
 
-git init
+```git init
 echo "# Your-Repository-Name" >> README.md
+```
 
 ## 2. Add and Commit the README:
 
 - Add the README.md file to the staging area and commit it:
 
-git add README.md
+```git add README.md
 git commit -m "Initial commit"
+```
 
 **Create a New Repository on GitHub:**
 
@@ -28,15 +30,17 @@ git commit -m "Initial commit"
 
 - To link your local repository to the newly created GitHub repository, use the following command:
 
-git remote add origin <repository_url>
+```git remote add origin <repository_url>
 Replace <repository_url> with the URL of your GitHub repository.
+```
 
 ## 4. Push Your Code to GitHub:
 
 - Push your local repository to GitHub:
 
-git branch -M main  # This renames your default branch to 'main' if it's not already named.
+```git branch -M main  # This renames your default branch to 'main' if it's not already named.
 git push -u origin main
+```
 
 ## 5. Verify on GitHub:
 
@@ -50,21 +54,25 @@ git push -u origin main
 
 ## 1. Use the following command to link your local repository to an existing GitHub repository:
 
-git remote add origin <repository_url>
+```git remote add origin <repository_url>
+```
+
 Replace <repository_url> with the URL of the existing GitHub repository.
 
 ## 2. Set Your Default Branch Name (if necessary):
 
 - If the default branch in your local repository is not named "main," you may need to rename it to match the GitHub repository's default branch name:
 
-git branch -M main
+```git branch -M main
+```
 
 ## 3. Push Your Local Changes to GitHub:
 
 - Push your local changes to the existing GitHub repository:
 
-git push -u origin main
+```git push -u origin main
 Verify on GitHub:
+```
 
 ## 4. Visit the existing GitHub repository's page in a web browser to ensure that your code has been pushed successfully.
 
@@ -88,7 +96,8 @@ To detach a codebase from a GitHub repository in Visual Studio Code and add it t
 - In the integrated terminal, navigate to the root folder of your codebase.
 - To remove the Git tracking information, you can run the following command:
 
-rm -rf .git
+```rm -rf .git
+```
 
 - This command will delete the .git directory, which contains all the Git configuration and history for the current repository.
 
@@ -96,9 +105,10 @@ rm -rf .git
 
 After removing the previous Git tracking, you can initialize a new Git repository for your codebase with the following commands:
 
-git init
+```git init
 git add .
 git commit -m "Initial commit"
+```
 
 - This initializes a new Git repository, adds all the files, and makes an initial commit.
 
@@ -110,9 +120,10 @@ git commit -m "Initial commit"
 
 - Once you've created the new GitHub repository, you'll need to link your local codebase to it. You can do this by adding a new remote and pushing your code:
 
-git remote add origin <new_repository_url>
+```git remote add origin <new_repository_url>
 git branch -M main  # or the name of your main branch
 git push -u origin main  # Push your code to the new repository
+```
 
 - Replace <new_repository_url> with the URL of your new GitHub repository.
 

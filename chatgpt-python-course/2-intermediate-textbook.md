@@ -1,7 +1,6 @@
 Moving on to intermediate Python coding. ChatGPT prompt:
 
-```"You are an experienced coding teacher. You will comprehensively and thoroughly teach me Python at an intermediate level, with practice exercise for each lesson. First, I would like you to provide me with a lesson plan that we will follow."
-```
+"You are an experienced coding teacher. You will comprehensively and thoroughly teach me Python at an intermediate level, with practice exercise for each lesson. First, I would like you to provide me with a lesson plan that we will follow."
 
 # Lesson plan
 

@@ -46,7 +46,7 @@ Now, we have an EC2 instance created. Let’s try to upload the files to the ser
 
 5. File > Site Manager Add a New site with the following parameters:
 
-–Protocol: SFTP – SSH File Transfer Protocol
+```–Protocol: SFTP – SSH File Transfer Protocol
 
 –Host: The public DNS name of your EC2 instance, or the public IP address of the server.
 
@@ -55,6 +55,7 @@ Now, we have an EC2 instance created. Let’s try to upload the files to the ser
 –Logon Type: Normal
 
 –User: For Amazon Linux, the default user name is ec2-user. For others check the docs.
+```
 
 6. Press Connect Button
 

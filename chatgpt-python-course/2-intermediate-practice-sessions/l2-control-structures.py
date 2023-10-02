@@ -1,3 +1,6 @@
+loops = input("For how many people would you like to check the voting age? ") # How many repetitions of questions does the user want
+loops = int(loops) # Convert the number into an integer
+
 age = input("How old are you? ") # Ask the user how old they are
 age = int(age) # Convert the number into an integer
 

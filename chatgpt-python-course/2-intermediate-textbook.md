@@ -175,3 +175,34 @@ print("Hello, " + name + "! Welcome to Python.")
 - Enter your name when prompted.
 
 Congratulations! You've completed Lesson 1 and created your first Python program. You now have a basic understanding of Python syntax, variables, data types, input/output, and running Python code.
+
+##########
+
+# Lesson 2: Control Structures
+
+In this lesson, we'll explore control structures in Python, including conditional statements and loops.
+
+**2.1 Conditional Statements:**
+
+Conditional statements allow your program to make decisions. The primary constructs are if, elif (short for "else if"), and else.
+
+**Exercise 2:**
+
+Write a Python program that does the following:
+
+- Asks the user for their age.
+- If the age is 18 or older, print "You are eligible to vote."
+- If the age is less than 18, print "You are not eligible to vote."
+
+**2.2 Loops:**
+
+Loops allow you to repeat a block of code multiple times. Python has two main types of loops: for and while.
+
+**Exercise 2 (continued):**
+
+Now, modify your program to do the following:
+
+- Ask the user how many times they'd like to see the eligibility message.
+- Use a for loop to display the eligibility message that many times.
+
+##########

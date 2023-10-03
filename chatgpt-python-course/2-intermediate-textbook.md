@@ -206,3 +206,25 @@ Now, modify your program to do the following:
 - Use a for loop to display the eligibility message that many times.
 
 ##########
+
+# Lesson 3: Functions and Modules
+
+In this lesson, we'll explore functions and modules in Python.
+
+**3.1 Functions:**
+
+Functions are blocks of reusable code that perform a specific task. They help you break down your program into smaller, manageable parts. Functions are defined using the def keyword.
+
+**Exercise 3:**
+
+Create a Python function called calculate_sum that takes two numbers as input and returns their sum. Then, use this function to calculate the sum of two numbers entered by the user.
+
+**3.2 Modules:**
+
+Modules are Python files containing reusable code, including functions, variables, and classes. You can import modules into your programs to use their functionality.
+
+**Exercise 3 (continued):**
+
+Create a separate Python file named math_operations.py and define the calculate_sum function in it. Then, in your main program file, import the calculate_sum function from math_operations.py and use it to calculate the sum of two numbers.
+
+##########

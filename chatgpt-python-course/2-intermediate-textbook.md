@@ -228,3 +228,73 @@ Modules are Python files containing reusable code, including functions, variable
 Create a separate Python file named math_operations.py and define the calculate_sum function in it. Then, in your main program file, import the calculate_sum function from math_operations.py and use it to calculate the sum of two numbers.
 
 ##########
+
+# Lesson 4: Lists and Tuples
+
+In this lesson, we'll explore lists and tuples, two fundamental data structures in Python.
+
+**4.1 Lists:**
+
+- Lists are ordered collections of items.
+- They can contain elements of different data types (integers, strings, etc.).
+- Lists are mutable, meaning you can change their contents.
+
+**Exercise 4:**
+
+Create an empty list called my_list. Then, add the following elements to it:
+
+- "apple"
+- 42 (an integer)
+- 3.14 (a float)
+- "banana"
+
+Print the my_list to see the result.
+
+**4.2 Tuples:**
+
+Tuples are similar to lists but are immutable, meaning their contents cannot be changed after creation.
+
+**Exercise 4 (continued):**
+
+Create a tuple called my_tuple with the same elements as my_list. Then, try to change one of the elements in the tuple to see what happens.
+
+**4.3 List Comprehensions:**
+
+- List comprehensions provide a concise way to create lists.
+- They are often used for filtering and transforming data.
+
+**Exercise 4 (continued):**
+
+Create a list called numbers containing the numbers from 1 to 10. Then, use a list comprehension to create a new list called squared_numbers that contains the squares of these numbers.
+
+##########
+
+# Lesson 5: Dictionaries and Sets
+
+In this lesson, we'll explore dictionaries and sets, two more essential data structures in Python.
+
+**5.1 Dictionaries:**
+
+- Dictionaries are collections of key-value pairs.
+- They are unordered and mutable.
+- Dictionaries are commonly used to store and retrieve data based on keys.
+
+**Exercise 5:**
+
+Create a dictionary called student_scores to store the scores of three students. Use their names as keys and assign scores as values. For example: "Alice": 90, "Bob": 85, "Charlie": 78.
+
+**5.2 Sets:**
+
+- Sets are collections of unique elements.
+- They are unordered and mutable.
+- Sets are useful for performing operations like union, intersection, and difference.
+
+**Exercise 5 (continued):**
+
+Create two sets, set1 and set2, containing some common elements and some unique elements. Then, perform the following set operations:
+
+- Find the union of set1 and set2.
+- Find the intersection of set1 and set2.
+- Find the elements that are unique to set1 (not in set2).
+
+##########

@@ -1,3 +1,5 @@
+Packages to be installed on all computers for current projects
+
 pip3 install BeautifulSoup4
 pip3 install requests
 pip3 install openai

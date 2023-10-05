@@ -54,8 +54,7 @@ git push -u origin main
 
 ## 1. Use the following command to link your local repository to an existing GitHub repository:
 
-```git remote add origin <repository_url>
-```
+```git remote add origin <repository_url>```
 
 Replace <repository_url> with the URL of the existing GitHub repository.
 
@@ -63,8 +62,7 @@ Replace <repository_url> with the URL of the existing GitHub repository.
 
 - If the default branch in your local repository is not named "main," you may need to rename it to match the GitHub repository's default branch name:
 
-```git branch -M main
-```
+```git branch -M main```
 
 ## 3. Push Your Local Changes to GitHub:
 
@@ -96,8 +94,7 @@ To detach a codebase from a GitHub repository in Visual Studio Code and add it t
 - In the integrated terminal, navigate to the root folder of your codebase.
 - To remove the Git tracking information, you can run the following command:
 
-```rm -rf .git
-```
+```rm -rf .git```
 
 - This command will delete the .git directory, which contains all the Git configuration and history for the current repository.
 

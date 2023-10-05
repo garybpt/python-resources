@@ -196,8 +196,7 @@ person["city"] = "San Francisco"  # Updates the city
 
 You can add new key-value pairs to a dictionary:
 
-```person["job"] = "Engineer"  # Adds a new key "job" with the value "Engineer"
-```
+```person["job"] = "Engineer"  # Adds a new key "job" with the value "Engineer"```
 
 **Dictionary Operations:**
 

@@ -344,3 +344,176 @@ Create two sets, set1 and set2, containing some common elements and some unique 
 - Find the elements that are unique to set1 (not in set2).
 
 ##########
+
+# Lesson 6: File Handling
+
+In this lesson, we'll explore file handling in Python, including reading and writing text files.
+
+**Opening a File:**
+
+- You can open a file using the open() function, which takes two arguments: the filename and the mode (e.g., 'r' for reading, 'w' for writing, 'a' for appending).
+
+```Example: file = open("filename.txt", "r")```
+
+**Exercise 6:**
+
+Create a text file named sample.txt and write some text into it. Then, write a Python program that opens and reads the contents of sample.txt and prints them to the console.
+
+**Reading from a File:**
+
+- To read the entire contents of a file as a string, you can use the read() method.
+- To read one line at a time, you can use the readline() method.
+- To read all lines into a list, you can use the readlines() method.
+
+**Writing to a File:**
+
+- To write to a file, you can open it in write mode ('w') or append mode ('a').
+- Use the write() method to write data to the file.
+
+**Closing a File:**
+
+- After reading or writing to a file, it's essential to close it using the close() method.
+- Alternatively, you can use a with statement as a context manager to ensure the file is automatically closed when you're done.
+
+**Exercise 6 (continued):**
+
+Modify your program to create a new text file named output.txt and write a message of your choice into it.
+
+**Example: Reading from a File (without context manager):**
+
+```file = open("sample.txt", "r")  # Open the file in read mode
+contents = file.read()  # Read the entire file as a string
+file.close()  # Close the file
+```
+
+**Example: Writing to a File (without context manager):**
+
+```file = open("output.txt", "w")  # Open the file in write mode
+file.write("Hello, File!")  # Write data to the file
+file.close()  # Close the file
+```
+
+**Example: Using a Context Manager (with statement):**
+
+```# Using a context manager ensures the file is closed automatically.
+with open("sample.txt", "r") as file:
+    contents = file.read()  # Read the entire file as a string
+```
+
+**The file is automatically closed when the 'with' block exits.**
+
+Important Tips:
+
+- Always close files after reading or writing to them to release system resources.
+- When writing to a file in write mode ('w'), it will create a new file or overwrite the existing one with the same name.
+- When opening a file in append mode ('a'), it will create a new file or append to an existing one without overwriting.
+- Remember to replace "sample.txt" and "output.txt" with your actual filenames in the examples above.
+
+**Exercise 6 (continued):**
+
+Refactor your file reading and writing code to use the with statement for proper file handling.
+
+##########
+
+# Lesson 7: Object-Oriented Programming (OOP)
+
+In this lesson, we'll explore the basics of Object-Oriented Programming (OOP) in Python.
+
+**7.1 Classes and Objects:**
+
+Classes: Classes are the building blocks of OOP. They define the structure and behavior of objects. Classes have attributes (data) and methods (functions) that operate on that data.
+
+Example:
+
+```class Person:
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+    
+    def print_details(self):
+        print(f"Name: {self.name}, Age: {self.age}, Gender: {self.gender}")
+```
+Objects: Objects are instances of classes. They represent specific instances of the data and behavior defined by the class.
+
+Example:
+
+```person1 = Person("Alice", 30, "Female")
+person2 = Person("Bob", 25, "Male")
+
+person1.print_details()  # Output: Name: Alice, Age: 30, Gender: Female
+person2.print_details()  # Output: Name: Bob, Age: 25, Gender: Male
+```
+
+**Exercise 7:**
+
+Create a class called Person with attributes such as name, age, and gender. Include a method to print the person's details.
+
+**7.2 Inheritance:**
+
+Inheritance: Inheritance allows you to create new classes based on existing classes. The new class (subclass) inherits attributes and methods from the existing class (base class).
+
+Example:
+
+```class Student(Person):
+    def __init__(self, name, age, gender, student_id):
+        super().__init__(name, age, gender)
+        self.student_id = student_id
+    
+    def print_details(self):
+        super().print_details()
+        print(f"Student ID: {self.student_id}")
+```
+
+**Exercise 7 (continued):**
+
+Create a subclass called Student that inherits from the Person class. Add additional attributes and methods specific to students.
+
+**7.3 Encapsulation:**
+
+Encapsulation: Encapsulation is the practice of making the internal representation of an object private and providing methods to interact with it. In Python, this is often achieved by using "getter" and "setter" methods.
+
+Example:
+
+```class Person:
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.__age = age  # Private attribute
+    
+    def get_age(self):
+        return self.__age
+    
+    def set_age(self, age):
+        if age >= 0:
+            self.__age = age
+        else:
+            print("Age cannot be negative.")
+```
+
+**Exercise 7 (continued):**
+
+In the Person class, use encapsulation to make the age attribute private and provide a method to get and set the age.
+
+**7.4 Polymorphism:**
+
+Polymorphism: Polymorphism allows objects of different classes to be treated as objects of a common base class. This simplifies code and enhances flexibility.
+
+Example:
+
+```def print_person_details(person):
+    person.print_details()
+
+person = Person("Alice", 30, "Female")
+student = Student("Bob", 25, "Male", "S12345")
+
+print_person_details(person)  # Calls Person's print_details
+print_person_details(student)  # Calls Student's print_details (polymorphism)
+```
+
+These concepts are fundamental to OOP in Python and can help you organize and structure your code effectively.
+
+**Exercise 7 (continued):**
+
+Demonstrate polymorphism by creating a function that takes a list of Person objects (including Student objects) and prints their details.
+
+##########

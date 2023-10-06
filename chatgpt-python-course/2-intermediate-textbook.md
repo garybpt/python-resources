@@ -289,6 +289,52 @@ Create a dictionary called student_scores to store the scores of three students.
 - They are unordered and mutable.
 - Sets are useful for performing operations like union, intersection, and difference.
 
+You have two sets, set1 and set2, and we'll perform the following set operations:
+
+1. Union:
+
+- The union of two sets, denoted as set1 | set2, contains all unique elements from both sets.
+- In other words, it combines the elements of both sets while removing duplicates.
+
+Example:
+
+```set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+union_result = set1 | set2  # Union of set1 and set2
+print(union_result)  # Output: {1, 2, 3, 4, 5, 6}
+```
+
+
+2. Intersection:
+
+- The intersection of two sets, denoted as set1 & set2, contains only the elements that are common to both sets.
+- It selects elements that exist in both sets.
+
+Example:
+
+```set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+intersection_result = set1 & set2  # Intersection of set1 and set2
+print(intersection_result)  # Output: {3, 4}
+```
+
+3. Difference (Unique Elements in set1):
+
+- To find the elements that are unique to set1 (not in set2), you can use the difference operation, denoted as set1 - set2.
+
+Example:
+
+```set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+difference_result = set1 - set2  # Unique elements in set1
+print(difference_result)  # Output: {1, 2}
+```
+
+These set operations can be useful for various tasks, such as filtering data, finding common elements, or identifying unique items between two sets.
+
 **Exercise 5 (continued):**
 
 Create two sets, set1 and set2, containing some common elements and some unique elements. Then, perform the following set operations:

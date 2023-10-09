@@ -6,6 +6,11 @@ Documentation for regularly used Python libraries.
 Beautiful Soup is a Python library for pulling data out of HTML and XML files.
 Documentation  - https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
+**Dacite**
+
+This module simplifies creation of data classes (PEP 557) from dictionaries.
+Documentation - https://pypi.org/project/dacite/0.0.13/
+
 **Discord**
 
 discord.py is a modern, easy to use, feature-rich, and async ready API wrapper for Discord.
@@ -29,6 +34,11 @@ Documentation - https://platform.openai.com/docs/introduction/overview
 
 The os module has many uses. This documentation looks specifically "os.path".
 Documentation - https://docs.python.org/3/library/os.path.html
+
+**PyYAML**
+
+PyYAML is a YAML parser and emitter for Python.
+Documentation - https://pyyaml.org/wiki/PyYAMLDocumentation
 
 **Random**
 

@@ -517,3 +517,94 @@ These concepts are fundamental to OOP in Python and can help you organize and st
 Demonstrate polymorphism by creating a function that takes a list of Person objects (including Student objects) and prints their details.
 
 ##########
+
+# Lesson 8: Exception Handling
+
+In this lesson, we'll learn about exception handling in Python, which is a way to gracefully handle errors and exceptions that might occur during program execution.
+
+**8.1 Try and Except Blocks:**
+
+- Try Block: A try block is used to enclose code that might raise an exception.
+- Except Block: An except block is used to handle exceptions that occur within the associated try block.
+
+**Exercise 8:**
+
+Write a program that prompts the user to enter two numbers and performs division. Handle the ZeroDivisionError exception that might occur if the second number is zero.
+
+```try:
+    # Attempt to perform division
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    result = num1 / num2
+
+except ZeroDivisionError:
+    # Handle the ZeroDivisionError exception
+    print("Error: Division by zero!")
+
+else:
+    # Code in the 'else' block executes if no exception occurred
+    print(f"Result: {result:.2f}")
+
+finally:
+    # The 'finally' block always executes, regardless of exceptions
+    print("Program finished execution.")
+```
+
+**8.2 Multiple Except Blocks:**
+
+- You can have multiple except blocks to handle different types of exceptions.
+- Python will execute the first except block that matches the raised exception type.
+
+**Exercise 8 (continued):**
+
+Extend the previous program to handle both ZeroDivisionError and ValueError exceptions. Handle the ValueError exception if the user enters a non-numeric input.
+
+```try:
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    result = num1 / num2
+
+except ZeroDivisionError:
+    print("Error: Division by zero!")
+
+except ValueError:
+    print("Error: Invalid input! Please enter a numeric value.")
+
+else:
+    print(f"Result: {result:.2f}")
+
+finally:
+    print("Program finished execution.")
+```
+
+**8.3 Finally Block:**
+
+- The finally block is used to execute code that must run regardless of whether an exception occurred or not.
+- It's often used for cleanup tasks or ensuring that resources are released.
+
+**Exercise 8 (continued):**
+
+Add a finally block to the program to print a message indicating that the program has finished executing.
+
+```try:
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    result = num1 / num2
+
+except ZeroDivisionError:
+    print("Error: Division by zero!")
+
+except ValueError:
+    print("Error: Invalid input! Please enter a numeric value.")
+
+else:
+    print(f"Result: {result:.2f}")
+
+finally:
+    print("Program finished execution.")
+```
+
+These are the key concepts of exception handling in Python. You use try to enclose code that might raise exceptions, except to catch and handle those exceptions, and finally for code that always executes. Multiple except blocks allow you to handle different exception types.
+
+##########
+

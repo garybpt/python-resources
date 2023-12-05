@@ -608,3 +608,4 @@ These are the key concepts of exception handling in Python. You use try to enclo
 
 ##########
 
+Have decided not to continue with the ChatGPT optional tasks and move on to Automate the Boring Stuff with Python. Let's see how we get on. 

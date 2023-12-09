@@ -1,3 +1,6 @@
+Built in Python libraries - https://docs.python.org/3/library/functions.html
+
+
 Documentation for regularly used Python libraries.
 
 

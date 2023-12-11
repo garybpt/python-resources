@@ -1,3 +1,5 @@
+# This was an experiment to see if I could create the first flow chart from chapter two
+
 YES = "Yes"
 NO = "No"
 

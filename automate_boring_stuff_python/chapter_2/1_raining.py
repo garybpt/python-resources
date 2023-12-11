@@ -1,10 +1,10 @@
 YES = "Yes"
 NO = "No"
 
-weather = input("Is it currently raining? ")
+weather = input("Is it currently raining? (Yes/No) ")
 
 if weather == YES:
-    umbrella = input("Do you have an umbrella? ")
+    umbrella = input("Do you have an umbrella? (Yes/No) ")
     if umbrella == YES:
         print("Go outside")
     elif umbrella == NO:

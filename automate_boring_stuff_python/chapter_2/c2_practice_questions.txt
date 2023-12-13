@@ -94,13 +94,43 @@ A break will stop the execution of a while loop whereas continue will loop back 
 
 13. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
 
+# A
 
+for i in range(1, 10 + 1):
+    print(str(i))
+
+# B
+
+i = 1
+while i < 11:
+    print(str(i))
+    i = i + 1
 
 
 14. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
 
+import spam
 
+spam.bacon()
 
 
 Extra credit: Look up the round() and abs() functions on the internet, and find out what they do. Experiment with them in the interactive shell.
 
+round()
+
+num1 = 240.564
+num2 = 456.254
+
+print(num1.__round__())
+print(num2.__round__())
+
+
+abs()
+
+number = -5
+absolute_value = abs(number)
+
+print("Original number:", number)
+print("Absolute value:", absolute_value)
+
+(The absolute value shows the distance between the number and 0 regardless of whether it is a positive or negative number.)

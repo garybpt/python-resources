@@ -77,17 +77,19 @@ else:
 
 10. What keys can you press if your program is stuck in an infinite loop?
 
-
+CTRL-C
 
 
 11. What is the difference between break and continue?
 
-
+A break will stop the execution of a while loop whereas continue will loop back the start and restart the while loop. 
 
 
 12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
 
-
+- range(10) - This sets the highest value (9) with 0 being the defualt lowest value
+- range(0, 10) - This sets the lowest value (0) and highest value (9)
+- range(0, 10, 1) - This sets the lowest value (0), the highest value (9), and a stepping argument (1). In this case, the range will go up in single increments. If it were set to 2 it would go up in even numbers. 
 
 
 13. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.

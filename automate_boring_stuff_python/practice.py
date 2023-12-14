@@ -1,1 +1,4 @@
-print('cats', 'dogs', 'mice', sep=', ')
+def spam():
+    eggs = 31337
+
+print(spam)

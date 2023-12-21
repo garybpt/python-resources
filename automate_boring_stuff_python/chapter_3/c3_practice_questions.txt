@@ -1,57 +1,78 @@
 1. Why are functions advantageous to have in your programs?
 
+Functions make it easier to automate regularly used code blocks so that you do not have to write them over and over again. In addition, when using a function, you can update it once and will then update anywhere that your function is called. 
 
 
 2. When does the code in a function execute: when the function is defined or when the function is called?
 
+When the function is called. 
 
 
 3. What statement creates a function?
 
+def function_name():
 
 
 4. What is the difference between a function and a function call?
 
+A function is generally found at the beginning of your programme and looks like "def function_name():". Here you can define actions that the function takes. A function call is found within your code and looks like "function_name()", and at the point of call runs through the actions defined in the specified function. 
 
 
 5. How many global scopes are there in a Python program? How many local scopes?
 
+There's typically one global scope and multiple local scopes. 
 
 
 6. What happens to variables in a local scope when the function call returns?
 
+They're forgotten by the programme. 
 
 
 7. What is a return value? Can a return value be part of an expression?
 
+Yes, return values can be part of an expression. When creating a function using the def statement, you can specify what the return value should be with a return statement. For example:
+
+def getAnswer(answerNumber):
+    if answerNumber == 1:
+        return 'It is certain'
 
 
 8. If a function does not have a return statement, what is the return value of a call to that function?
 
+In Python, if a function does not have a return statement, or if the return statement does not explicitly specify a value, the function returns None by default.
 
 
 9. How can you force a variable in a function to refer to the global variable?
 
+You put "global" before the function name, for example:
+
+def function_name():
+    global eggs
 
 
 10. What is the data type of None?
 
+The None value represents the absence of a value. 
 
 
 11. What does the import areallyourpetsnamederic statement do?
 
+It imports all modules from the areallyourpetsnamederic library.
 
 
 12. If you had a function named bacon() in a module named spam, how would you call it after importing spam?
 
+spam.library()
 
 
 13. How can you prevent a program from crashing when it gets an error?
 
+You need to code exceptions into your programme, for example "ZeroDivisionError". 
 
 
 14. What goes in the try clause? What goes in the except clause?
 
+The "try" clause is for the actions that you would like to perform, and the "except" clause is for troubleshooting possible errors. 
 
 
 Practice Projects

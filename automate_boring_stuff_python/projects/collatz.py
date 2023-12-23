@@ -8,9 +8,8 @@ def collatz(number):
     return result
 
 
-input_number = int(input("Enter a number: "))
-
 try:
+    input_number = int(input("Enter a number: "))
     while input_number != 1: # When the sum value is greater than 1 the loop will continue. It will only stop when 1 is achieved 
         input_number = collatz(input_number)
 

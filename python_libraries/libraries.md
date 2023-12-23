@@ -1,4 +1,5 @@
 Built in Python libraries - https://docs.python.org/3/library/functions.html
+Built in Python exceptions - https://docs.python.org/3/library/exceptions.html
 
 
 Documentation for regularly used Python libraries.

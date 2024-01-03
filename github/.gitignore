@@ -5,6 +5,7 @@
 
 # Ignore log files
 *.log
+*.json
 
 # Ignore Node.js dependencies folder
 node_modules/

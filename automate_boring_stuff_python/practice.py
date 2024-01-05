@@ -1,8 +1,5 @@
-spam = ['cat', 'bat', 'rat', 'elephant']
-print(spam)
+spam = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']
 
-del spam[2]
-print(spam)
+spam.reverse()
 
-del spam[2]
 print(spam)

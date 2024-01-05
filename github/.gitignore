@@ -3,7 +3,7 @@
 *.out
 *.exe
 
-# Ignore log files
+# Ignore log files and libraries
 *.log
 *.json
 

@@ -1,4 +1,6 @@
 # Conway's Game of Life
+
+
 import random, time, copy
 WIDTH = 60
 HEIGHT = 20

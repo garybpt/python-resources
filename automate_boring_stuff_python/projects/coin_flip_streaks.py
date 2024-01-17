@@ -1,3 +1,6 @@
+# This is a coin flip script which predicts the likelihood of flipping a streak of 6
+
+
 import random
 
 def generate_coin_flips():

@@ -1,3 +1,6 @@
+# This is a script that works through the impossible "collatz" puzzle
+
+
 def collatz(number):
     if number % 2 == 0: # The % is a modulus/remainder operator. It will work out whether an integer is odd or even by calculating the remainder by dividing one number by the other and presenting what is left. For example 7 / 2 = 3 + 1 
         result = number // 2

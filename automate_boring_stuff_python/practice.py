@@ -1,12 +1,26 @@
-print('How many cats do you have?')
-num_cats = input()
+spam = {'name': 'Zophie', 'age': 7}
 
-try:
-    if int(num_cats) >= 4:
-        print("That's a whole lot of cats!")
-    elif int(num_cats) <=0:
-        print("Why don't you have any cats?")
-    else:
-        print("That's not many cats.")
-except ValueError:
-    print("You need to use numbers.")
+if 'name' in spam.keys():
+    print('True')
+else:
+    print('False')
+
+if 'Zophie' in spam.values():
+    print('True')
+else:
+    print('False')
+
+if 'colour' in spam.keys():
+    print('True')
+else:
+    print('False')
+
+if 'colour' not in spam.keys():
+    print('True')
+else:
+    print('False')
+
+if 'colour' in spam:
+    print('True')
+else:
+    print('False')

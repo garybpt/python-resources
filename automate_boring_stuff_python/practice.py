@@ -1,26 +1,9 @@
-spam = {'name': 'Zophie', 'age': 7}
+spam = {'name': 'Pooka', 'age': 5}
 
-if 'name' in spam.keys():
-    print('True')
-else:
-    print('False')
+print(spam.setdefault('colour', 'black'))
 
-if 'Zophie' in spam.values():
-    print('True')
-else:
-    print('False')
+print(spam)
 
-if 'colour' in spam.keys():
-    print('True')
-else:
-    print('False')
+print(spam.setdefault('colour', 'white'))
 
-if 'colour' not in spam.keys():
-    print('True')
-else:
-    print('False')
-
-if 'colour' in spam:
-    print('True')
-else:
-    print('False')
+print(spam)

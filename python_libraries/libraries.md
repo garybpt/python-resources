@@ -39,6 +39,11 @@ Documentation - https://platform.openai.com/docs/introduction/overview
 The os module has many uses. This documentation looks specifically "os.path".
 Documentation - https://docs.python.org/3/library/os.path.html
 
+**Pendulum**
+
+Pendulum is a Python package to ease datetimes manipulation.
+Documentation - https://pendulum.eustace.io/
+
 **PyYAML**
 
 PyYAML is a YAML parser and emitter for Python.

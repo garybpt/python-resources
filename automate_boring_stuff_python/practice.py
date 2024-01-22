@@ -1,9 +1,10 @@
-spam = {'name': 'Pooka', 'age': 5}
+spam = {'cat': 42}
 
-print(spam.setdefault('colour', 'black'))
+if 'cat' in spam:
+    print(spam['cat'])
 
-print(spam)
+if 'cat' in spam:
+    print(spam.keys())
 
-print(spam.setdefault('colour', 'white'))
-
-print(spam)
+if 'cat' in spam:
+    print(spam.values())

@@ -1,0 +1,43 @@
+1. What does the code for an empty dictionary look like?
+
+dictionary = {}
+
+
+2. What does a dictionary value with a key 'foo' and a value 42 look like?
+
+dictionary = {'foo': 42}
+
+
+3. What is the main difference between a dictionary and a list?
+
+Dictionaries are useful because you can map one item (the key) to another (the value), as opposed to lists, which simply contain a series of values in order.
+
+
+4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
+
+You'll get a KeyError message. 
+
+
+5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam (a) and 'cat' in spam.keys() (b)?
+
+a. 'cat' in spam checks if the key 'cat' is present in the dictionary spam.
+b. 'cat' in spam.keys() checks if the string 'cat' is a key in the dictionary spam. The result will be a boolean value.
+
+
+6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?
+
+a. 'cat' in spam checks if the key 'cat' is present in the dictionary spam.
+b. 'cat' in spam.values() checks if the value 'cat' is present in any of the values in the dictionary spam. The result will be a boolean value.
+
+
+7. What is a shortcut for the following code?
+
+if 'color' not in spam:
+    spam['color'] = 'black'
+
+spam.setdefault('color', 'black')
+
+
+8. What module and function can be used to “pretty print” dictionary values?
+
+The correct module is pprint, but the correct function is pprint.pprint(). The pprint module provides a pprint() function for pretty-printing dictionaries, lists, and other data structures. The pprint module needs to be imported, and then you can use pprint.pprint() for pretty printing.

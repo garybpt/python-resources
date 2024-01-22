@@ -58,3 +58,8 @@ Documentation - https://www.w3schools.com/python/module_random.asp
 
 Requests is an elegant and simple HTTP library for Python, built for human beings.
 Documentation - https://requests.readthedocs.io/en/latest/
+
+**Seaborn**
+
+Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+Documentation - https://seaborn.pydata.org/

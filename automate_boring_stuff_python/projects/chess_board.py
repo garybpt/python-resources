@@ -1,35 +1,44 @@
-# This is a programme which creates a valid chess board
+# A function named is_valid_chess_board() that takes a dictionary argument and returns True or False depending on if the board is valid
 
+def is_valid_chess_board(board):
+    # Dictionary to keep track of the count of pieces for each player
+    piece_count = {'bking': 0, 'wking': 0, 'bpawn': 0, 'wpawn': 0,
+                   'bknight': 0, 'wknight': 0, 'bbishop': 0, 'wbishop': 0,
+                   'brook': 0, 'wrook': 0, 'bqueen': 0, 'wqueen': 0}
 
-# Setting up the starting chess board
-chess_board =  {'a8': 'b_rook', 'b8': 'b_knight', 'c8': 'b_bishop', 'd8': 'b_queen', 'e8': 'b_king', 'f8': 'b_bishop', 'g8': 'b_knight', 'h8': 'b_rook',
-                'a7': 'b_pawn', 'b7': 'b_pawn', 'c7': 'b_pawn', 'd7': 'b_pawn', 'e7': 'b_pawn', 'f7': 'b_pawn', 'g7': 'b_pawn', 'h7': 'b_pawn',
-                'a6': ' ', 'b6': ' ', 'c6': ' ', 'd6': ' ', 'e6': ' ', 'f6': ' ', 'g6': ' ', 'h6': ' ',
-                'a5': ' ', 'b5': ' ', 'c5': ' ', 'd5': ' ', 'e5': ' ', 'f5': ' ', 'g5': ' ', 'h5': ' ',
-                'a4': ' ', 'b4': ' ', 'c4': ' ', 'd4': ' ', 'e4': ' ', 'f4': ' ', 'g4': ' ', 'h4': ' ',
-                'a3': ' ', 'b3': ' ', 'c3': ' ', 'd3': ' ', 'e3': ' ', 'f3': ' ', 'g3': ' ', 'h3': ' ',
-                'a2': 'w_pawn', 'b2': 'w_pawn', 'c2': 'w_pawn', 'd2': 'w_pawn', 'e2': 'w_pawn', 'f2': 'w_pawn', 'g2': 'w_pawn', 'h2': 'w_pawn',
-                'a1': 'w_rook', 'b1': 'w_knight', 'c1': 'w_bishop', 'd1': 'w_king', 'e1': 'w_queen', 'f1': 'w_bishop', 'g1': 'w_knight', 'h1': 'w_rook'}
+    # Valid chess board positions
+    valid_positions = set([f"{i}{j}" for i in range(1, 9) for j in 'abcdefgh'])
 
+    for position, piece in board.items():
+        # Check if the piece is in a valid position
+        if position not in valid_positions:
+            return False
 
-# Keeping this here just in case I need it (I don't think it will be needed)
-chess_pieces =  {'black': {'b_king': {1, 'e8'}, 'b_queen': {1, 'd8'}, 'b_bishop': {2, 'c8', 'f8'}, 'b_rook': {2, 'a8', 'h8'}, 'b_knight': {2, 'b8', 'g8'}, 'b_pawn': {8, 'a7', 'b7', 'c7', 'd7', 'e7', 'f7', 'g7', 'h7'}},
-                'white': {'w_king': {1, 'd1'}, 'w_queen': {1, 'e1'}, 'w_bishop': {2, 'c1', 'f1'}, 'w_rook': {2, 'a1', 'h1'}, 'w_knight': {2, 'b1', 'g1'}, 'w_pawn': {8, 'a2', 'b2', 'c2', 'd2', 'e2', 'f2', 'g2', 'h2'}}}
+        # Extract player colour and piece type
+        colour, ptype = piece[0], piece[1:]
 
+        # Check if the piece name is valid
+        if colour not in ('b', 'w') or ptype not in ('pawn', 'knight', 'bishop', 'rook', 'queen', 'king'):
+            return False
 
-def number_of_pieces(chess_pieces):
-    for colour, piece, num, position in chess_pieces.values():
-        print(num)
+        # Increment the piece count for the current player
+        piece_count[f"{colour}{ptype}"] += 1
 
+    # Check if each player has at most 16 pieces and at most 8 pawns
+    for colour in ('b', 'w'):
+        if sum(piece_count[f"{colour}{ptype}"] for ptype in ('pawn', 'knight', 'bishop', 'rook', 'queen', 'king')) > 16:
+            return False
+        if piece_count[f"{colour}pawn"] > 8:
+            return False
 
-# Function to assess whether the chess board and pieces are valid
-# def is_valid_chess_board():
-    # First - Need assess whether the chess board dimensions are correct
-    # Second - Need to make sure that the total number of pieces per player are correct (16)
-    # Third - Need to make sure that the correct number of each piece is given to the player
-    # Fourth - The programme needs to detect whether a piece is off the board
+    # Check if exactly one black king and one white king are present
+    if piece_count['bking'] != 1 or piece_count['wking'] != 1:
+        return False
 
+    # If all checks pass, the board is valid
+    return True
 
-
-
-number_of_pieces(chess_pieces)
+# Example usage:
+chess_board = {'1h': 'bking', '6c': 'wqueen', '2g': 'bbishop', '5h': 'bqueen', '3e': 'wking'}
+result = is_valid_chess_board(chess_board)
+print(result)

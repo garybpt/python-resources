@@ -1,10 +1,4 @@
-spam = {'cat': 42}
+String = 'GARY'
+result = String.center(8, '#')
 
-if 'cat' in spam:
-    print(spam['cat'])
-
-if 'cat' in spam:
-    print(spam.keys())
-
-if 'cat' in spam:
-    print(spam.values())
+print(result)

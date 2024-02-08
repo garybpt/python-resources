@@ -1,7 +1,7 @@
 # A script to manage a player's game inventory
 
+# Starting inventory
 player_inventory = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
-
 
 def display_inventory(inventory):
     print("Inventory:")

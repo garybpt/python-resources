@@ -13,12 +13,14 @@ def display_inventory(inventory):
     print('Total number of items: ' + str(item_total))
 
 def add_to_inventory(inventory, added_items):
-    list(inv)
-    print(list)
+    for item in added_items:
+        if item in inventory:
+            inventory[item] += 1  # Increment the count in the inventory dictionary
+        else:
+            inventory[item] = 1   # Add the item to the inventory with count 1 if it doesn't exist
+    return inventory  # Return the updated inventory
+    
 
-add_to_inventory(inv)
+inv = add_to_inventory(inv, dragon_loot)
 
-
-# inv = add_to_inventory(inv, dragon_loot)
-
-# display_inventory(inv)
+display_inventory(inv)

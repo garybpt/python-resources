@@ -1,62 +1,23 @@
-spam = 'hello'
+spam = 'Hello, world!'
 
-if spam.isalpha():
+if spam.startswith('Hello'):
     print(True)
 else:
     print(False)
 
-spam = 'hello123'
-
-if spam.isalpha():
+if spam.endswith('world!'):
     print(True)
 else:
     print(False)
 
-spam = 'hello123'
+spam = 'abc123'
 
-if spam.isalnum():
+if spam.startswith('abcdef'):
     print(True)
 else:
     print(False)
 
-spam = '123'
-
-if spam.isdecimal():
-    print(True)
-else:
-    print(False)
-
-spam = '   '
-
-if spam.isspace():
-    print(True)
-else:
-    print(False)
-
-spam = 'This Is Title Case'
-
-if spam.istitle():
-    print(True)
-else:
-    print(False)
-
-spam = 'This Is Title Case 123'
-
-if spam.istitle():
-    print(True)
-else:
-    print(False)
-
-spam = 'This Is not Title Case'
-
-if spam.istitle():
-    print(True)
-else:
-    print(False)
-
-spam = 'This Is NOT Title Case Either'
-
-if spam.istitle():
+if spam.endswith():
     print(True)
 else:
     print(False)

@@ -1,23 +1,24 @@
-spam = 'Hello, world!'
+while True:
+    print('Please input a nickname. It must only contain letters.')
+    nickname = input()
+    if nickname.isalpha():
+        break
+    print('Please stick to the requirements.')
 
-if spam.startswith('Hello'):
-    print(True)
-else:
-    print(False)
+while True:
+    print('Please input 3-5 random numbers.')
+    numbers = input()
+    if numbers.isdecimal():
+        break
+    print('Please stick to the requirements.')
 
-if spam.endswith('world!'):
-    print(True)
-else:
-    print(False)
+print(f'Your password is: {nickname}{numbers}')
+password = (nickname + numbers) # Something is going wrong here
 
-spam = 'abc123'
-
-if spam.startswith('abcdef'):
-    print(True)
-else:
-    print(False)
-
-if spam.endswith():
-    print(True)
-else:
-    print(False)
+while True:
+    input('What is your password? ')
+    question = input()
+    if question == password:
+        print('Access granted.')
+    else:
+        ('Access denied')

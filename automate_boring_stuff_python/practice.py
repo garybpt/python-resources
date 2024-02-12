@@ -1,24 +1,25 @@
-while True:
-    print('Please input a nickname. It must only contain letters.')
-    nickname = input()
-    if nickname.isalpha():
-        break
-    print('Please stick to the requirements.')
+# The ord() and chr() functions
 
-while True:
-    print('Please input 3-5 random numbers.')
-    numbers = input()
-    if numbers.isdecimal():
-        break
-    print('Please stick to the requirements.')
+spam = ord('A') # Converts 'A' into its Unicode code point
+print(spam) # 65
 
-print(f'Your password is: {nickname}{numbers}')
-password = (nickname + numbers) # Something is going wrong here
+spam = ord('4') # Converts '4' (string) into its Unicode code point
+print(spam) # 52
 
-while True:
-    input('What is your password? ')
-    question = input()
-    if question == password:
-        print('Access granted.')
-    else:
-        ('Access denied')
+spam = ord('!')  # Converts '!' into its Unicode code point
+print(spam) # 33
+
+spam = chr(65)  # Converts 'A' (integer) into its Unicode code point
+print(spam) # A
+
+spam = ord('B')
+print(spam)
+
+spam = ord('A') < ord('B')
+print(spam)
+
+spam = chr(ord('A'))
+print(spam)
+
+spam = chr(ord('A') + 1)
+print(spam)

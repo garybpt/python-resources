@@ -1,25 +1,7 @@
-# The ord() and chr() functions
+import pyperclip
 
-spam = ord('A') # Converts 'A' into its Unicode code point
-print(spam) # 65
+text = pyperclip.copy('Hello, world!')
 
-spam = ord('4') # Converts '4' (string) into its Unicode code point
-print(spam) # 52
+text_2 = pyperclip.paste()
 
-spam = ord('!')  # Converts '!' into its Unicode code point
-print(spam) # 33
-
-spam = chr(65)  # Converts 'A' (integer) into its Unicode code point
-print(spam) # A
-
-spam = ord('B')
-print(spam)
-
-spam = ord('A') < ord('B')
-print(spam)
-
-spam = chr(ord('A'))
-print(spam)
-
-spam = chr(ord('A') + 1)
-print(spam)
+print(text_2)

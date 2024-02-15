@@ -1,4 +1,4 @@
-# In this program, we define a printPicnic() method that will take in a dictionary of information and use center(), ljust(), and rjust() to display that information in a neatly aligned table-like format
+# In this program, we define a print_picnic() method that will take in a dictionary of information and use center(), ljust(), and rjust() to display that information in a neatly aligned table-like format
 
 def print_picnic(items_dict, left_width, right_width):
     print('PICNIC ITEMS'.center(left_width + right_width, '-'))

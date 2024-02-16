@@ -1,0 +1,73 @@
+1. What are escape characters?
+
+An escape character lets you use characters that are otherwise impossible to put into a string, such as ' and ". It consists of a \ folllowed by the character that you want to put into a string. 
+
+
+2. What do the \n and \t escape characters represent?
+
+\n = new line
+\t = tab
+
+
+3. How can you put a \ backslash character in a string?
+
+The backslash is to be put in front of the character that you would like to escape, such as ' or ".
+
+
+4. The string value "Howl's Moving Castle" is a valid string. Why isn’t it a problem that the single quote character in the word Howl's isn’t escaped?
+
+This is a valid string because the string is enclosed within two " and not '.
+
+
+5. If you don’t want to put \n in your string, how can you write a string with newlines in it?
+
+You can avoid the use of \n in strings by starting and finishing the string with '''. 
+
+
+6. What do the following expressions evaluate to?
+
+a. 'Hello, world!'[1]
+b. 'Hello, world!'[0:5]
+c. 'Hello, world!'[:5]
+d. 'Hello, world!'[3:]
+
+This will pick out the character which sits are the specified index.
+
+a. H
+b. Hello
+c. Hello
+d. llo, world!
+
+
+7. What do the following expressions evaluate to?
+
+a. 'Hello'.upper()
+b. 'Hello'.upper().isupper()
+c. 'Hello'.upper().lower()
+
+a. HELLO
+b. HELLO
+c. hello
+
+
+8. What do the following expressions evaluate to?
+
+a. 'Remember, remember, the fifth of November.'.split()
+b. '-'.join('There can be only one.'.split())
+
+a. ['Remember', 'remember', 'the', 'fifth', 'of', 'November']
+b. 'There-can-be-only-one'
+
+
+9. What string methods can you use to right-justify, left-justify, and center a string?
+
+.rjust() = right-justify
+.ljust() = left-justify
+.center() = centre-justify
+
+
+10. How can you trim whitespace characters from the beginning or end of a string?
+
+.strip() = strip all whitespace characters
+.rstrip() = strip all whitespace characters to the right of the string
+.lstrip() = strip all whitespace characters to the left of the string.

@@ -44,6 +44,11 @@ Documentation - https://docs.python.org/3/library/os.path.html
 Pendulum is a Python package to ease datetimes manipulation.
 Documentation - https://pendulum.eustace.io/
 
+**Pyperclip**
+
+Pyperclip provides a cross-platform Python module for copying and pasting text to the clipboard.
+Documentation - https://pyperclip.readthedocs.io/en/latest/
+
 **PyYAML**
 
 PyYAML is a YAML parser and emitter for Python.

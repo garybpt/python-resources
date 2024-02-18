@@ -68,3 +68,8 @@ Documentation - https://requests.readthedocs.io/en/latest/
 
 Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 Documentation - https://seaborn.pydata.org/
+
+**Zombie Dice**
+
+A Python simulator for the dice game "Zombie Dice" that can run bot AI players. 
+Documentation - https://github.com/asweigart/zombiedice

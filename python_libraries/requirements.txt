@@ -1,4 +1,4 @@
-Packages to be installed on all computers for current projects
+# Packages to be installed on all computers for current projects
 
 pip3 install BeautifulSoup4
 pip3 install requests
@@ -6,5 +6,4 @@ pip3 install openai
 pip3 install discord
 pip3 install pytz
 pip3 install python-dotenv
-pip3 install pyyaml
 pip3 install pyyaml

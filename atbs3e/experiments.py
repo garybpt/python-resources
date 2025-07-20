@@ -1,9 +1,13 @@
-spam = input('>')
-spam = int(spam)
+spam = 0
 
-if spam == 1:
-    print('Hello!')
-elif spam == 2:
-    print('Howdy!')
-else:
-    print('Greetings!')
+if spam < 5:
+    print('Hello, world.')
+    spam = spam + 1
+
+print('Interval')
+
+spam = 0
+
+while spam < 5:
+    print('Hello, world.')
+    spam = spam + 1

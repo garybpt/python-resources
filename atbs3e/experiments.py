@@ -1,11 +1,9 @@
-print('Please input any number.')
-num = int(input(''))
+spam = input('>')
+spam = int(spam)
 
-if num >= 100:
-    print('That is 100 or greater')
-elif num >= 50:
-    print('Within 50-99 range.')
-elif num >= 10:
-    print('Within 10-49 range.')
+if spam == 1:
+    print('Hello!')
+elif spam == 2:
+    print('Howdy!')
 else:
-    print('That is 9 or less')
+    print('Greetings!')

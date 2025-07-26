@@ -1,8 +1,12 @@
-for num in range(1, 11):
-    print(num)
+def Car(model, year, colour, for_sale):
+    model = model
+    year = year
+    colour = colour
+    for_sale = str(for_sale)
+    print('Model: ' + model)
+    print('Year: ' + year)
+    print('Colour: ' + colour)
+    print('For Sale: ' + for_sale)
 
 
-num = 0
-while num < 11:
-    print(num)
-    num = num + 1
+print(Car('BMW', '2025', 'Blue', True))

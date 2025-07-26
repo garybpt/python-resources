@@ -10,13 +10,13 @@ draws = 0
 
 while True: # The main game loop
     print('%s Wins, %s Losses, %s Draws' % (wins, losses, draws))
-    while True: # The player input loop
+    while True: # The player input loop - keeps looping until the player chooses r, p, s, or q
         print('Enter your move: (r)ock, (s)cissors, (p)aper, or (q)uit.')
         player_move = input('>')
         if player_move == 'q':
             sys.exit() # Quits the programme
         if player_move == 'r' or player_move == 'p' or player_move == 's':
-            break #Break out of the player input loop
+            break #Break out of the player input loop and continue to comparison
         print('Type one of r, p, s, or q.')
 
     # Display what the player chose
@@ -28,10 +28,9 @@ while True: # The main game loop
         print('SCISSORS versus... ')
 
     # Display what the computer choses
-    move_number = random.randint(1, 3)
+    move_number = random.randint(1, 3) # The computer chooses a random integer between 1-3
     if move_number == 1:
-        computer_move = 'r'
-        print('ROCK')
+        computer_move = 'r' # The integer is turned into a string for comparison later
     elif move_number == 2:
         computer_move = 'p'
         print('PAPER')
@@ -40,9 +39,9 @@ while True: # The main game loop
         print('SCISSORS')
 
     # Display and record the win\loss\draw
-    if player_move == computer_move:
+    if player_move == computer_move: # The two strings are compared with one another
         print('It is a draw!')
-        draws = draws + 1
+        draws = draws + 1 # A score is added to the appropriate counter based upon the comparison
     elif player_move == 'r' and computer_move == 's':
         print('You win!')
         wins = wins + 1

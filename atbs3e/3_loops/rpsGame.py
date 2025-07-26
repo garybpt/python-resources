@@ -32,10 +32,10 @@ while True: # The main game loop
     if move_number == 1:
         computer_move = 'r'
         print('ROCK')
-    elif computer_move == 2:
+    elif move_number == 2:
         computer_move = 'p'
         print('PAPER')
-    elif computer_move == 3:
+    elif move_number == 3:
         computer_move = 's'
         print('SCISSORS')
 

@@ -4,5 +4,5 @@ def say_hello_to(name):
     print('Good afternoon, ' + name)
     print('Good evening, ' + name)
 
-say_hello_to('Alice') # Remember to reduce the indent of the code! 
+say_hello_to('Alice') # Remember to reduce the indent of the code, Gary! 
 say_hello_to('Bob')

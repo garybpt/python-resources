@@ -10,15 +10,13 @@ try:
 
         if indent_increasing:
             # Increase the number of spaces
-            indent = indent + 1
-            if indent == 20:
-                # Change direction when indent gets to 20
+            indent = indent + 1 # After every loop the indent gets bigger by 1
+            if indent == 20: # Change direction when indent gets to 20
                 indent_increasing = False
         else:
                 # Decrease the number of spaces
-                indent = indent - 1
-                if indent == 0:
-                    # Change direction again when indent gets back to 0
+                indent = indent - 1 # After every loop the indent gets smaller by 1
+                if indent == 0: # Change direction again when indent gets back to 0
                     indent_increasing = True
 except KeyboardInterrupt:
-    sys.ext()
+    sys.ext() # The loop will continue until the user stops the script with ctrl-c

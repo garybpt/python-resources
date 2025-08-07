@@ -1,9 +1,9 @@
 def box_print(symbol, width, height):
-    if len(symbol) != 1:
+    if len(symbol) != 1: # The programme tests whether the symbol is one character or more
         raise Exception('Symbol must be single character.')
-    if width <= 2:
+    if width <= 2: # The programme tests whether the width value is equal to or below 2, and if so, present an exception
         raise Exception('Width must be greater than 2.')
-    if height <= 2:
+    if height <= 2: # The programme tests whether the height value is equal to or below 2, and if so, present an exception
         raise Exception('Height must be greater than 2.')
     
     print(symbol * width)
